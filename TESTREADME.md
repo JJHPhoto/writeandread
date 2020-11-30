@@ -1,3 +1,19 @@
-# josh
+# Readme writer
 
-## rocks
+## writes readmea
+
+## Table of Contents
+
+## open
+
+## init
+
+## all peeps
+
+## just me
+
+## in terminal
+
+## Github: joshsauwce
+
+## email: jaykay

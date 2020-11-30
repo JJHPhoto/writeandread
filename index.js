@@ -29,11 +29,56 @@ function init() {
 
   rl.question("What is your project title? ", function (title) {
     rl.question("What does your project do? ", function (description) {
-      const mdTitle = "# " + title + "\n";
-      const mdDescription = "## " + description + "\n";
-      const data = mdTitle + mdDescription;
-      writeToFile(fileName, data);
-      rl.close();
+      rl.question("What license will you use? ", function (license) {
+        rl.question("How do I install this? ", function (installation) {
+          rl.question("Who can use this? ", function (usage) {
+            rl.question("Who contributed to this? ", function (contribute) {
+              rl.question("How do I test this? ", function (test) {
+                rl.question(
+                  "What is your Github username? ",
+                  function (github) {
+                    rl.question(
+                      "What is your email address? ",
+                      function (email) {
+                        const mdTitle = "# " + title + "\n";
+                        const mdDescription = "## " + description + "\n";
+                        const mdTableOfContents =
+                          "## " + "Table of Contents" + "\n";
+                        const mdLicence = "## " + license + "\n";
+                        const mdInstall = "## " + installation + "\n";
+                        const mdUsage = "## " + usage + "\n";
+                        const mdContribute = "## " + contribute + "\n";
+                        const mdTest = "## " + test + "\n";
+                        const mdQuestions =
+                          "## " +
+                          "Github: " +
+                          github +
+                          "\n" +
+                          "## " +
+                          "email: " +
+                          email +
+                          "\n";
+                        const mdInput =
+                          mdTitle +
+                          mdDescription +
+                          mdTableOfContents +
+                          mdLicence +
+                          mdInstall +
+                          mdUsage +
+                          mdContribute +
+                          mdTest +
+                          mdQuestions;
+                        writeToFile(fileName, mdInput);
+                        rl.close();
+                      }
+                    );
+                  }
+                );
+              });
+            });
+          });
+        });
+      });
     });
   });
 }
