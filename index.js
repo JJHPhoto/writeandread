@@ -10,29 +10,33 @@ inquirer
   .prompt([
     {
       type: "input",
-      message: "What is your user name?",
-      name: "username",
+      message: "What is your project title?",
+      name: "title",
     },
     {
       type: "input",
-      message: "What languages do you know?",
-      name: "language",
+      message: "What does your project do?",
+      name: "function",
     },
     {
       type: "input",
-      message: "What is your preferred method of communication?",
-      name: "talk",
+      message: "What license will you use?",
+      name: "license",
     },
   ])
-  .then((response) => {
-    console.log(response.username);
-    console.log(response.language);
-    console.log(response.talk);
+  .then((data) => {
+    const filename = `# ${data.title} 
+    1. Functionality 
+
+    ${data.function} 
+
+    2. License Agreement 
+
+    ${data.license}`;
 
     //Using this dummy name to test.
-    fs.writeFile("InqREAD.md", JSON.stringify(response), (err) => {
-      if (err) console.log("failed to write file");
-      else console.log("wrote file");
+    fs.writeFile("Test1.md", filename, (err) => {
+      err ? console.log(err) : console.log("Success");
     });
   });
 
