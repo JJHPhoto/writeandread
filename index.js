@@ -1,52 +1,72 @@
 //My constants
 const fs = require("fs");
 const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
-const questions = [];
+const questions = [
+  {
+    type: "input",
+    message: "What is your project title?",
+    name: "title",
+  },
+  {
+    type: "input",
+    message: "What does your project do?",
+    name: "description",
+  },
+  {
+    type: "input",
+    message: "How do you want to install this?",
+    name: "installation",
+  },
+  {
+    type: "input",
+    message: "How will you use this?",
+    name: "usage",
+  },
+  {
+    type: "list",
+    message: "What license will you use?",
+    name: "license",
+    choices: ["Apache", "MIT", "CC"],
+  },
+  {
+    type: "input",
+    message: "Who contributed to this?",
+    name: "contributing",
+  },
+  {
+    type: "input",
+    message: "How will you test this?",
+    name: "tests",
+  },
+  {
+    type: "input",
+    message: "What is your Github user name??",
+    name: "github",
+  },
+  {
+    type: "input",
+    message: "What is your email address?",
+    name: "email",
+  },
+];
 
-//inquirer copied from activity
-inquirer
-  .prompt([
-    {
-      type: "input",
-      message: "What is your project title?",
-      name: "title",
-    },
-    {
-      type: "input",
-      message: "What does your project do?",
-      name: "function",
-    },
-    {
-      type: "input",
-      message: "What license will you use?",
-      name: "license",
-    },
-  ])
-  .then((data) => {
-    const filename = `# ${data.title} 
-    1. Functionality 
-
-    ${data.function} 
-
-    2. License Agreement 
-
-    ${data.license}`;
-
-    //Using this dummy name to test.
-    fs.writeFile("Test1.md", filename, (err) => {
-      err ? console.log(err) : console.log("Success");
-    });
-  });
+const askUser = () => inquirer.prompt(questions);
 
 // function to write README file
-// function writeToFile(fileName, data) {
-//   fs.writeFile(fileName, data, function (err) {
-//     if (err) throw err;
-//     console.log("Saved!");
-//   });
-// }
+const writeToFile = (fileName, data) => {
+  fs.writeFile(fileName, data, (err) => {
+    if (err) throw err;
+    console.log("Saved!");
+  });
+};
+
+askUser()
+  .then((data) => writeToFile("TESTREADME.md", generateMarkdown(data)))
+  .then(() => console.log("Successfully created your README.md file"))
+  .catch((err) => console.error(err));
 
 // function to initialize program
 function init() {}
@@ -56,6 +76,31 @@ init();
 
 //Not using
 //========
+
+// const path = require("path");
+// const generateMarkdown = require(path.resolve(
+//   __dirname,
+//   "./utils/generateMarkdown.js"
+// ));
+
+// var updater = require(path.resolve(__dirname, "./updater.js"));
+
+//inquirer copied from activity
+// inquirer.prompt([]).then((data) => {
+//   const filename = `# ${data.title}
+//     1. Functionality
+
+//     ${data.function}
+
+//     2. License Agreement
+
+//     ${data.license}`;
+
+//   //Using this dummy name to test.
+//   fs.writeFile("Test1.md", filename, (err) => {
+//     err ? console.log(err) : console.log("Success");
+//   });
+// });
 
 //Readline that worked but wrong cause its not inquirer.
 
