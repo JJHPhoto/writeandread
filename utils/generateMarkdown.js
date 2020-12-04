@@ -47,9 +47,10 @@ ${data.tests}
 
 ## Questions
 
-${data.github}
+[Your GitHub](http://github.com/${data.github})
 
-${data.email}
+Your Email:
+<${data.email}>
 `;
 
 module.exports = generateMarkdown;
