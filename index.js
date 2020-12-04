@@ -64,6 +64,6 @@ const writeToFile = (fileName, data) => {
 };
 
 askUser()
-  .then((data) => writeToFile("TESTREADME.md", generateMarkdown(data)))
+  .then((data) => writeToFile("GENERATEDREADME.md", generateMarkdown(data)))
   .then(() => console.log("Successfully created your README.md file"))
   .catch((err) => console.error(err));
