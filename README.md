@@ -18,9 +18,7 @@ A little application that lets you generate at professional README markdown.
 
 ## How to demo
 
-<figure class="video_container">
-  <iframe src="https://drive.google.com/file/d/1vXu7oQeFB---JDREjoagf0jKMXrZip2s/view" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+![Video](READMEdemo.mp4)
 
 ## Project Workflow
 
