@@ -16,9 +16,7 @@ A little application that lets you generate at professional README markdown.
 
 [Markdown Guide](https://about.gitlab.com/handbook/markdown-guide/)
 
-## Demo of application.
-
-![Video](AppDemo.mp4)
+## Demo of application
 
 [App Demo](https://drive.google.com/file/d/1vXu7oQeFB---JDREjoagf0jKMXrZip2s/view)
 
