@@ -20,6 +20,10 @@ A little application that lets you generate at professional README markdown.
 
 [App Demo](https://drive.google.com/file/d/1vXu7oQeFB---JDREjoagf0jKMXrZip2s/view)
 
+## How to install
+
+## Purpose of application
+
 ## Project Workflow
 
 The first thing I did was review our class activities that had inquirer and fs demonstrated. I wanted to see if I could figure out how to piece the code together. I was able to find some things that worked and some that didn't. I then went to Google to try and figure out how to make the parts work that weren't. I ended up trying and scrapping a lot of different pieces of code.
