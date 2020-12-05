@@ -18,7 +18,7 @@ A little application that lets you generate at professional README markdown.
 
 ## How to demo
 
-![Video](READMEdemo.mp4)
+![Video](./READMEdemo.mp4)
 
 ## Project Workflow
 
