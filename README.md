@@ -15,11 +15,12 @@ A little application that lets you generate at professional README markdown.
 [Markdown Licence Badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 
 [Markdown Guide](https://about.gitlab.com/handbook/markdown-guide/)
+[GIPHY CAPTURE](https://apps.apple.com/us/app/giphy-capture-the-gif-maker/id668208984?mt=12)
 
 ## How to install
 
 1. Clone down my repo from my Github [here](https://github.com/JJHPhoto/writeandread)
-2. Open the `index.js` file in an Integrated Terminal and run `npm i` in your VS Code/Terminal/Bash to install Node.js.
+2. Open the `index.js` file in an Integrated Terminal and run `npm i` in your VS Code/Terminal/Git Bash to install Node.js.
 3. Next, run `node index.js`. This will start to run my application. Please answer the prompted questions accordingly.
 
 Below is a gif of how to install.
