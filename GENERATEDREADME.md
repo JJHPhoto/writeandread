@@ -1,10 +1,10 @@
-# Write and Read
+# Bookshelves
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-My application generates a markdown file based on the user's answers to prompted questions.
+Lets you organize your book collections into digital shelves. For instance, if you wanted a WWII history bookshelf you could put all those books there. Or if you had a science fiction bookshelf, you could put those books there. 
 
 ## Table of contents
 
@@ -17,11 +17,11 @@ My application generates a markdown file based on the user's answers to prompted
 
 ## Installation
 
-With Node
+My hope is to create an app that could run on IoS and Android
 
 ## Usage
 
-Inside of Node
+On your phone or tablet. I might make a desktop version, but I believe I'd start with a mobile app.
 
 ## License
 
@@ -29,11 +29,11 @@ This project uses the MIT license.
 
 ## Contributing
 
-A friend and a member of my study group.
+For now, it would just be me but I'd be happy to add contributors who read different genres of books than myself.
 
 ## Tests
 
-In VS code
+I would test it in house till I got a working demo. Then I'd add some trusted people to look for bugs. Then maybe do a beta test for those intrested before a public relase
 
 ## Questions
 
