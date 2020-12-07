@@ -23,11 +23,12 @@ A little application that lets you generate at professional README markdown.
 3. Next, run `node index.js`. This will start to run my application. Please answer the prompted questions accordingly.
 
 Below is a gif of how to install.
+
 ![](InstaDemo.gif)
 
 ## Demo of application
 
-If you would like to see how the application works, please watch the video below.
+If you would like to see how the application works, please click on the link below to watch a demo video.
 
 [App Demo](https://drive.google.com/file/d/1vXu7oQeFB---JDREjoagf0jKMXrZip2s/view)
 
