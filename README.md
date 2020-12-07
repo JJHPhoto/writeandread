@@ -16,13 +16,24 @@ A little application that lets you generate at professional README markdown.
 
 [Markdown Guide](https://about.gitlab.com/handbook/markdown-guide/)
 
+## How to install
+
+1. Clone down my repo from my Github [here](https://github.com/JJHPhoto/writeandread)
+2. Open the `index.js` file in an Integrated Terminal and run `npm i` in your VS Code/Terminal/Bash to install Node.js.
+3. Next, run `node index.js`. This will start to run my application. Please answer the prompted questions accordingly.
+
+Below is a gif of how to install.
+![](InstaDemo.gif)
+
 ## Demo of application
+
+If you would like to see how the application works, please watch the video below.
 
 [App Demo](https://drive.google.com/file/d/1vXu7oQeFB---JDREjoagf0jKMXrZip2s/view)
 
-## How to install
-
 ## Purpose of application
+
+The purpose of this application is to provide a quick way for any developer to make a professional looking Markdown.
 
 ## Project Workflow
 
@@ -37,4 +48,4 @@ With my string template literal working, I was able to start styling it to look 
 After I recorded my demo, I decided to update a few aspects of my markdown generator:
 
 - Instead of "Your Github" I made it so that it'd say "My Github: (username)"
-- I also noticed my "Resources" list was all in one line.
+- I also noticed my "Resources" list was all in one line and fixed that.
